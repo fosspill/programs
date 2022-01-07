@@ -1,0 +1,24 @@
+Name: Final Fantasy XIV
+Description: Final Fantasy XIV with XIVLauncher.
+Grade: Gold
+
+Dependencies:
+- allfonts
+- dotnet48
+- vcredist2019
+
+Parameters:
+  dxvk: true
+  esync: true
+  discrete_gpu: true
+  
+Executable:
+  name: Final Fantasy XIV
+  icon: battlenet.png
+  file: XIVLauncher.exe
+  path: users/$USER/AppData/Local/XIVLauncher/
+  
+Steps:
+- action: install_msi
+  file_name: Setup.exe
+  url: https://github.com/goatcorp/FFXIVQuickLauncher/releases/download/6.1.12/Setup.exe
